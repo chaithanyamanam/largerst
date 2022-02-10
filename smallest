@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+int a[100],n,i,s,l;
+printf("enter array size");
+scanf("%d",&n);
+printf("enter array elements");
+for(i=0;i<n;i++)
+scanf("%d",&a[i]);
+
+s=l=a[0];
+for(i=0;i<n;i++)
+{
+	if(s>a[i])
+	s=a[i];
+	if(l<a[i])
+	l=a[i];
+}
+printf("\ns=%d",s);
+printf("\nl=%d",l);
+}
